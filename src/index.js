@@ -1,4 +1,3 @@
-'use strict';
 import { PixabayAPI } from './js/pixabay-api';
 import oneCardPhoto from './templates/oneCardPhoto.hbs';
 import Notiflix from 'notiflix';
@@ -70,10 +69,7 @@ const onLoadMoreImg = () => {
   try {
     pixabayApi.page += 1;
     getPhotos();
-  } catch {
-    error;
-  }
-  {
+  } catch (error) {
     console.warn(error);
   }
 };
