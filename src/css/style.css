@@ -62,3 +62,39 @@ body {
     color: #ffffff;
     border-color: #037915
 }
+
+.gallery__img {
+    min-width: 280px;
+    height: 180px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-basis: calc((100% - 120px) / 4);
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444444;
+}
+
+.info-item:not(:first-child) {
+    margin-left: 5px;
+}
+
+.photo-card {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
